@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/kontakt.css">
+    <title>Kontakt</title>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img src="../Pictures/Logo hotelu.svg" alt=""></a>
+        </div>
+
+        <div class="headerContainer">
+            <div class="mainContact">
+                <div class="telephone">
+                    <img src="../Pictures/phone_icon.png" alt="" id="phoneIcon">
+                    <p>+420 300 000 123</p>
+                </div>
+                <div class="email">
+                    <img src="../Pictures/email_icon.png" alt="" id="emailIcon">
+                    <p>info@diademhotel.cz</p>
+                </div>
+            </div>
+
+            <nav class="navigationMenu"> 
+                <label for="hamburger">&#9776; MENU</label>
+                <input type="checkbox" id="hamburger"/>
+                <div class="navItems">
+                    <li><a href="./2-rezervace_ubytovani.html">Rezervace</a></li>
+                    <li><a href="./3-hotel_a_sluzby.html">Hotel a služby</a></li>
+                    <li><a href="./4-pokoje.html">Pokoje</a></li>
+                    <li><a href="./5-wellness.html">Wellness</a></li>
+                    <li><a href="./6-restaurace.html">Restaurace</a></li>
+                    <li><a href="./7-galerie.html">Galerie</a></li>
+                    <li><a href="./8-kontakt.html">Kontakt</a></li>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <h1>Kontakt</h1>
+
+        <section class="contact">
+            <p>Zde naleznete kontaktní údaje hotelu Diadem, a formulář, prostřednictvím kterého se s námi můžete spojit. Přiložena je i mapa, pomocí níž si můžete naplánovat trasu. </p>
+            <div class="contactContainer">
+                <div class="contactData">
+                    <h4>ADRESA</h4>
+                    <p>HOTEL DIADEM **** <br>
+                    Přemilovická 82, Sedlec <br>
+                    360 10 Karlovy Vary</p>
+                    <br><br>
+                    <h4>KONTAKT</h4>
+                    <p>+420 300 000 123 <br>
+                    info@diademhotel.cz</p>
+                </div>
+                <div class="contactForm">
+                    <form="../php/validation_contact.php" method="POST" action="mailto:daria.lagutenko@outlook.com">
+                        <label for="fullName">Jméno a příjmení*</label><br>
+                        <input type="text" name="name" id="" required>
+                        <br>
+                        <label for="email">E-mail*</label><br>
+                        <input type="email" name="email" id="email" required>
+                        <br>
+                        <label for="phone">Telefon*</label><br>
+                        <input type="number" name="phone" id="phone" required>
+                        <br>
+                        <label for="message">Zpráva</label> <br>
+                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+                        <br>
+                    </form>
+                    <input type="submit" value="Poslat zprávu" validate(this.parentNode)>
+                </div>
+            </div>
+        </section>
+
+        <br><br>
+        
+        <section class="map">
+            <iframe style="border:none" src="https://frame.mapy.cz/s/fuvorujabo" width="1000" height="380" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section> <br><br>
+    
+    </main>
+    
+    <footer class="footerContainer">
+        <div class="hotelInformation">
+            <img src="../Pictures/Logo hotelu.svg" alt="logo">
+            <p>Hotel DIADEM **** <br>
+            Přemilovická 82, Sedlec, 360 10 Karlovy Vary</p>
+        </div>
+        <div class="references">
+            <p>Zásady ochrany osobních údajů</p>
+            <p>©2022</p>
+            <p>Webdesign by DL Studio</p>
+        </div>
+    </footer>
+</body>
+<script src="../scripts/contact_validation.js"></script>
+</html>

@@ -1,0 +1,36 @@
+//Proměnné
+$background-color: rgb(59, 6, 6);
+$header-footer-text-color: rgb(255, 230, 9);
+$main-background-color: rgba(252, 213, 87, 0.893);
+$heading-color: rgb(59, 6, 6);
+
+#warning
+{
+    font-style: italic;
+}
+
+input
+{
+    width: 300px;
+}
+
+.address
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#notes
+{
+    width: 300px;
+    max-width: 300px;
+}
+
+button
+{
+    background-color: $background-color;
+    color: $header-footer-text-color;
+    text-transform: uppercase;
+    padding: 20px;
+    align-items: center;
+}

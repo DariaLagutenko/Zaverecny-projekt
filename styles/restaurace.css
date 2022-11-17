@@ -1,0 +1,31 @@
+ul {
+  list-style-position: inside;
+}
+
+.openingHours img {
+  width: 40px;
+  height: 40px;
+}
+.openingHours h4 {
+  text-transform: uppercase;
+  color: rgb(59, 6, 6);
+}
+.openingHours p {
+  margin: 0;
+  padding: 5px;
+}
+
+.restaurantContact img {
+  width: 40px;
+  height: 30px;
+}
+.restaurantContact h4 {
+  text-transform: uppercase;
+  color: rgb(59, 6, 6);
+}
+.restaurantContact p {
+  margin: 0;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=restaurace.css.map */

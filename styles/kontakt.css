@@ -1,0 +1,51 @@
+.contactContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.contactContainer .contactData {
+  width: 300px;
+  min-width: 220px;
+  background-color: rgb(59, 6, 6);
+  color: rgb(255, 230, 9);
+  margin-right: 10px;
+  font-size: 14px;
+}
+.contactContainer .contactForm {
+  margin-left: 10px;
+}
+.contactContainer .contactForm input {
+  width: 300px;
+}
+.contactContainer .contactForm textarea {
+  width: 300px;
+  max-width: 300px;
+}
+@media (max-width: 580px) {
+  .contactContainer {
+    flex-direction: column;
+  }
+  .contactContainer .contactData {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .contactContainer .contactForm {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.map {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/*# sourceMappingURL=kontakt.css.map */

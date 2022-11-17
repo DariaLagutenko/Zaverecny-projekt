@@ -1,0 +1,65 @@
+//Proměnné
+$background-color: rgb(59, 6, 6);
+$header-footer-text-color: rgb(255, 230, 9);
+$main-background-color: rgba(252, 213, 87, 0.893);
+$heading-color: rgb(59, 6, 6);
+
+.contactContainer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .contactData
+    {
+        width: 300px;
+        min-width: 220px;
+        background-color: $background-color;
+        color: $header-footer-text-color;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .contactForm
+    {
+        margin-left: 10px;
+        input{width: 300px;}
+        textarea{width: 300px; max-width: 300px;}
+    }
+
+    //změna rozpoložení při šířce <580px
+    @media(max-width: 580px)
+    {
+        flex-direction: column;
+
+        .contactData
+        {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .contactForm
+        {
+            margin-right: auto;
+            margin-left: auto;
+
+        }
+    }
+}
+
+.map
+{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    // height:0;
+    
+    iframe
+    {
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+}

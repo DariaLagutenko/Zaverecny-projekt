@@ -1,0 +1,100 @@
+//Proměnné
+$background-color: rgb(59, 6, 6);
+$header-footer-text-color: rgb(255, 230, 9);
+$main-background-color: rgba(252, 213, 87, 0.893);
+$heading-color: rgb(59, 6, 6);
+
+h1 
+{
+    color: $heading-color;
+    text-transform: uppercase;
+    padding-top: 30px;
+    margin: 0;
+}
+
+.reservationInput
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    background-color: $background-color;
+    align-items: center;
+    color: whitesmoke;
+    padding: 20px;
+
+    .calendar
+    {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        input{height: 40px;}
+        
+    }
+
+    .guests
+    {
+        display: inline-flex;
+        input{width: 40px;}
+        align-content: space-between;
+    }
+}
+
+.roomTypeContainer
+{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: $heading-color;
+    opacity: 0.7;
+
+    .roomTypeBasicInfo
+    {
+        display: flex;
+        flex-direction: row;
+        img{width: 15px; height: 15px;}
+    }
+
+    .roomReservation
+    {
+        display: flex;
+        flex-direction: column;
+
+        .breakfast
+        {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .halfboard
+        {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .fullboard
+        {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+
+.summary
+{
+    background-color: $background-color;
+    color: whitesmoke;
+    padding: 10px;
+
+    h4{text-transform: uppercase;}
+}
+
+#confirmReservation
+{
+    background-color: $background-color;
+    color: $header-footer-text-color;
+    text-transform: uppercase;
+    padding: 20px;
+    align-items: center;
+}

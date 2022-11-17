@@ -1,0 +1,70 @@
+//Proměnné
+$background-color: rgb(59, 6, 6);
+$header-footer-text-color: rgb(255, 230, 9);
+$main-background-color: rgba(252, 213, 87, 0.893);
+$heading-color: rgb(59, 6, 6);
+
+h1 
+{
+    color: $heading-color;
+    text-transform: uppercase;
+    padding-top: 30px;
+    margin: 0;
+}
+
+ul 
+{
+    list-style-position: inside;
+}
+
+h2
+{ 
+    text-align: center;
+}
+
+
+.roomTypes
+{
+    padding-bottom: 30px;
+
+    .roomTypeInformation
+    {
+        h3 
+        {
+            font-weight: bold;
+        }
+
+        img
+        {
+            width: 25px; height: 25px;
+        } 
+    }
+}
+
+.roomServices
+{
+    table
+    {
+        margin-left: auto;  
+        margin-right: auto;  
+        text-align: center;
+
+        tr, td 
+        {
+            border-bottom: 1pt solid $heading-color;
+        }
+
+        tr :first-child
+        {
+            text-align: left;
+            column-width: 150px;
+        }
+
+        tr :nth-child(2)
+        {
+            padding-left: 10px; 
+            padding-right: 10px;
+            text-align: right;
+        }
+    }  
+}

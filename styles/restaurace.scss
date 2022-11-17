@@ -1,0 +1,33 @@
+//Proměnné
+$background-color: rgb(59, 6, 6);
+$header-footer-text-color: rgb(255, 230, 9);
+$main-background-color: rgba(252, 213, 87, 0.893);
+$heading-color: rgb(59, 6, 6);
+
+
+ul 
+{
+    list-style-position: inside;
+}
+
+.openingHours
+{
+    img{width: 40px; height: 40px;}
+    h4
+    {
+        text-transform: uppercase; 
+        color: $background-color; 
+    }
+    p{margin: 0; padding: 5px;}
+}
+
+.restaurantContact
+{
+    img{width: 40px; height: 30px;}
+    h4
+    {
+        text-transform: uppercase; 
+        color: $background-color; 
+    }
+    p{margin: 0; padding: 5px;}
+}

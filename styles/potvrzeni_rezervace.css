@@ -1,0 +1,27 @@
+#warning {
+  font-style: italic;
+}
+
+input {
+  width: 300px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
+#notes {
+  width: 300px;
+  max-width: 300px;
+}
+
+button {
+  background-color: rgb(59, 6, 6);
+  color: rgb(255, 230, 9);
+  text-transform: uppercase;
+  padding: 20px;
+  align-items: center;
+}
+
+/*# sourceMappingURL=potvrzeni_rezervace.css.map */

@@ -1,0 +1,13 @@
+.sectionImages {
+  justify-content: center;
+  max-height: 750px;
+  width: 100%;
+  padding-bottom: auto;
+}
+.sectionImages img {
+  width: 260px;
+  height: 180px;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=main_page.css.map */

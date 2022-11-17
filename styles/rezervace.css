@@ -1,0 +1,84 @@
+h1 {
+  color: rgb(59, 6, 6);
+  text-transform: uppercase;
+  padding-top: 30px;
+  margin: 0;
+}
+
+.reservationInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  background-color: rgb(59, 6, 6);
+  align-items: center;
+  color: whitesmoke;
+  padding: 20px;
+}
+.reservationInput .calendar {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+.reservationInput .calendar input {
+  height: 40px;
+}
+.reservationInput .guests {
+  display: inline-flex;
+  align-content: space-between;
+}
+.reservationInput .guests input {
+  width: 40px;
+}
+
+.roomTypeContainer {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  color: rgb(59, 6, 6);
+  opacity: 0.7;
+}
+.roomTypeContainer .roomTypeBasicInfo {
+  display: flex;
+  flex-direction: row;
+}
+.roomTypeContainer .roomTypeBasicInfo img {
+  width: 15px;
+  height: 15px;
+}
+.roomTypeContainer .roomReservation {
+  display: flex;
+  flex-direction: column;
+}
+.roomTypeContainer .roomReservation .breakfast {
+  display: flex;
+  flex-direction: row;
+}
+.roomTypeContainer .roomReservation .halfboard {
+  display: flex;
+  flex-direction: row;
+}
+.roomTypeContainer .roomReservation .fullboard {
+  display: flex;
+  flex-direction: row;
+}
+
+.summary {
+  background-color: rgb(59, 6, 6);
+  color: whitesmoke;
+  padding: 10px;
+}
+.summary h4 {
+  text-transform: uppercase;
+}
+
+#confirmReservation {
+  background-color: rgb(59, 6, 6);
+  color: rgb(255, 230, 9);
+  text-transform: uppercase;
+  padding: 20px;
+  align-items: center;
+}
+
+/*# sourceMappingURL=rezervace.css.map */

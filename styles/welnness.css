@@ -1,0 +1,25 @@
+.procedures h4 {
+  font-style: italic;
+}
+
+.pricelist table {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.pricelist table th {
+  background-color: rgb(59, 6, 6);
+  color: rgb(255, 230, 9);
+}
+.pricelist table tr, .pricelist table td {
+  border-bottom: 1pt solid rgb(59, 6, 6);
+}
+.pricelist table tr :first-child {
+  text-align: left;
+}
+.pricelist table tr :nth-child(2) {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*# sourceMappingURL=welnness.css.map */

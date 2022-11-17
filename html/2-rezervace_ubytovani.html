@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/rezervace.css">
+    <title>Rezervace ubytování</title>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img src="../Pictures/Logo hotelu.svg" alt=""></a>
+        </div>
+
+        <div class="headerContainer">
+            <div class="mainContact">
+                <div class="telephone">
+                    <img src="../Pictures/phone_icon.png" alt="" id="phoneIcon">
+                    <p>+420 300 000 123</p>
+                </div>
+                <div class="email">
+                    <img src="../Pictures/email_icon.png" alt="" id="emailIcon">
+                    <p>info@diademhotel.cz</p>
+                </div>
+            </div>
+
+            <nav class="navigationMenu"> 
+                <label for="hamburger">&#9776; MENU</label>
+                <input type="checkbox" id="hamburger"/>
+                <div class="navItems">
+                    <li><a href="./2-rezervace_ubytovani.html">Rezervace</a></li>
+                    <li><a href="./3-hotel_a_sluzby.html">Hotel a služby</a></li>
+                    <li><a href="./4-pokoje.html">Pokoje</a></li>
+                    <li><a href="./5-wellness.html">Wellness</a></li>
+                    <li><a href="./6-restaurace.html">Restaurace</a></li>
+                    <li><a href="./7-galerie.html">Galerie</a></li>
+                    <li><a href="./8-kontakt.html">Kontakt</a></li>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    
+        <h1>Rezervace ubytování</h1>
+
+        <form action="new_reservation.php" method="post">
+
+            <div class="reservationInput">
+                <div class="calendar">
+                    <label for="check-in">Příjezd</label>
+                    <input type="date" name="Příjezd" id="" required>
+                    <label for="check-out">Odjezd</label>
+                    <input type="date" name="Odjezd" id="" required>
+                </div>
+                <div class="guests">
+                    <label for="">Počet hostů:</label>
+                    <input type="number" name="Počet hostů" id="" required>
+                </div>
+                <input type="button" value="Vyhledat" onclick="find_rooms.php">
+            </div>
+
+            <br><br>
+
+            <div class="roomTypeContainer">
+                <div class="roomTypeImage">
+                    <img src="" alt="">
+                </div>
+                <div class="roomTypeInformation">
+                    <h3 class="roomTypeName">Jednolůžkový pokoj CLASSIC</h3>
+                    <div class="roomTypeBasicInfo">
+                        <div class="people">
+                            <img src="../Pictures/person_icon.png" alt="">až ? osob
+                        </div>
+                        <div class="m2">
+                            <img src="../Pictures/m2_icon.png" alt="">? m2
+                        </div>
+                    </div>
+                    <div class="roomReservation">
+                        <div class="breakfast">
+                            <div>Ubytování se snídaní</div> 
+                            <div>? Kč</div>
+                            <input type="button" value="Rezervovat">
+                        </div>
+                        <div class="halfboard">
+                            <div>Ubytování s polopenzí</div> 
+                            <div>? Kč</div>
+                            <button name="Rezervovat">Rezervovat</button>
+                        </div>
+                        <div class="fullboard">
+                            <div>Ubytování s plnou penzí</div> 
+                            <div>? Kč</div>
+                            <button name="Rezervovat">Rezervovat</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="roomTypeContainer">
+                <div class="roomTypeImage">
+                    <img src="" alt="">
+                </div>
+                <div class="roomTypeInformation">
+                    <h3 class="roomTypeName">Dvoulůžkový pokoj CLASSIC</h3>
+                    <div class="roomTypeBasicInfo">
+                        <div class="people">
+                            <img src="../Pictures/person_icon.png" alt="">až ? osob
+                        </div>
+                        <div class="m2">
+                            <img src="../Pictures/m2_icon.png" alt="">? m2
+                        </div>
+                    </div>
+                    <div class="roomReservation">
+                        <div class="breakfast">
+                            <div>Ubytování se snídaní</div> 
+                            <div>? Kč</div>
+                            <button name="Rezervovat">Rezervovat</button>
+                        </div>
+                        <div class="halfboard">
+                            <div>Ubytování s polopenzí</div> 
+                            <div>? Kč</div>
+                            <button name="Rezervovat">Rezervovat</button>
+                        </div>
+                        <div class="fullboard">
+                            <div>Ubytování s plnou penzí</div> 
+                            <div>? Kč</div>
+                            <button name="Rezervovat">Rezervovat</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="roomTypeContainer">
+                <div class="roomTypeImage">
+                    <img src="" alt="">
+                </div>
+                <div class="roomTypeInformation">
+                    <h3 class="roomTypeName">Dvoulůžkový pokoj SUPERIOR</h3>
+                    <div class="roomTypeBasicInfo">
+                        <div class="people">
+                            <img src="../Pictures/person_icon.png" alt="">až ? osob
+                        </div>
+                        <div class="m2">
+                            <img src="../Pictures/m2_icon.png" alt="">? m2
+                        </div>
+                    </div>
+                    <div class="roomReservation">
+                        <div class="breakfast">
+                            <div>Ubytování se snídaní</div> 
+                            <div>? Kč</div>
+                            <button name="Rezervovat">Rezervovat</button>
+                        </div>
+                        <div class="halfboard">
+                            <div>Ubytování s polopenzí</div> 
+                            <div>? Kč</div>
+                            <button name="Rezervovat">Rezervovat</button>
+                        </div>
+                        <div class="fullboard">
+                            <div>Ubytování s plnou penzí</div> 
+                            <div>? Kč</div>
+                            <button name="Rezervovat">Rezervovat</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="roomTypeContainer">
+                <div class="roomTypeImage">
+                    <img src="" alt="">
+                </div>
+                <div class="roomTypeInformation">
+                    <h3 class="roomTypeName">Suite CLASSIC</h3>
+                    <div class="roomTypeBasicInfo">
+                        <div class="people">
+                            <img src="../Pictures/person_icon.png" alt="">až ? osob
+                        </div>
+                        <div class="m2">
+                            <img src="../Pictures/m2_icon.png" alt="">? m2
+                        </div>
+                    </div>
+                    <div class="roomReservation">
+                        <div class="breakfast">
+                            <div>Ubytování se snídaní</div> 
+                            <div>? Kč</div>
+                            <button name="Rezervovat">Rezervovat</button>
+                        </div>
+                        <div class="halfboard">
+                            <div>Ubytování s polopenzí</div> 
+                            <div>? Kč</div>
+                            <button name="Rezervovat">Rezervovat</button>
+                        </div>
+                        <div class="fullboard">
+                            <div>Ubytování s plnou penzí</div> 
+                            <div>? Kč</div>
+                            <button name="Rezervovat">Rezervovat</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="summary">
+                <h4>Shrnutí rezervace</h4>
+                <p><strong>Příjezd:</strong></p>
+                <p><strong>Odjezd:</strong></p>
+                <p><strong>Hosté:</strong></p>
+                <p><strong>Sazba:</strong></p>
+                <p><strong>Cena:</strong></p>
+            </div>
+
+            <br>
+
+            <div class="confirmReservation">
+                <button name="" id="confirmReservation">K potvrzení rezervace</button>
+            </div>
+
+            <br>
+            
+            <form="../php/validation_contact.php" method="POST">
+                <p id="warning">Pole označená * jsou povinná.</p>
+                <label for="name">Jméno*</label><br>
+                <input type="text" name="name" id="" required>
+                <br><br>
+                <label for="surname">Příjmení*</label><br>
+                <input type="text" name="surname" id="" required>
+                <br><br>
+                <label for="street">Ulice*</label><br>
+                <input type="text" name="street" id="" required>
+                <br><br>
+                <div class="address">
+                    <div class="city">
+                        <label for="city">Město*</label><br>
+                        <input type="text" name="city" id="city" required>
+                    </div>
+                    <div class="code">
+                        <label for="code">PSČ*</label><br>
+                        <input type="number" name="code" id="code" required>
+                    </div>
+                </div>
+                <br>
+                <div class="country">
+                    <label for="country">Stát*</label><br>
+                    <input type="text" name="country" id="country" required>
+                </div>
+                <br>
+                <label for="email">E-mail*</label><br>
+                <input type="email" name="email" id="" required>
+                <br><br>
+                <label for="phone">Telefon (vč. předvolby začínající "+")*</label><br>
+                <input type="text" name="phone" id="" required>
+                <br><br>
+                <label for="notes">Poznámky, speciální požadavky</label> <br>
+                <textarea name="" id="notes" cols="30" rows="10"></textarea>
+            </form>
+            <br><br>
+            <button type="submit" validate(this.parentNode)>Potvrdit rezervaci</button>
+        </form>
+    </main>
+
+    <footer class="footerContainer">
+        <div class="hotelInformation">
+            <img src="../Pictures/Logo hotelu.svg" alt="logo">
+            <p>Hotel DIADEM **** <br>
+            Přemilovická 82, Sedlec, 360 10 Karlovy Vary</p>
+        </div>
+        <div class="references">
+            <p>Zásady ochrany osobních údajů</p>
+            <p>©2022</p>
+            <p>Webdesign by DL Studio</p>
+        </div>
+    </footer>
+</body>
+</html>
